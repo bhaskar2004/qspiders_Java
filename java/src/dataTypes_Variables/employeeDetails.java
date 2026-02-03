@@ -1,3 +1,5 @@
+package dataTypes_Variables;
+
 public class employeeDetails {
     public static void main(String[] args) {
 
