@@ -42,7 +42,7 @@ public class OperatorsAssignment {
 
     public static void main(String[] args) {
         emma();
-        attendence();
+        attendance();
         salary();
         waterBottels();
         examMarks();
