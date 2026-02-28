@@ -1,6 +1,4 @@
 package loops;
-
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.Scanner;
  public class PrimeNumbers {
 
@@ -43,14 +41,31 @@ import java.util.Scanner;
          System.out.println(sum==n ? n+" is a perfect number ": n+ " is not perfect number ");
      }
 
+     public static void factorsOfDigits(int n){
+         while (n!=0){
+             int digit=n%10;
+             //find the factors of digit
+             System.out.println("the digit is : "+ digit);
+             System.out.println("the factors of digit " );
+             for(int i=1;i<=digit;i++){
+                 if(digit%i==0){
+                     System.out.println(i+ " ");
+                 }
+             }
+             n/=10;
+
+         }
+     }
+
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("enter n value");
         int n=s.nextInt();
-        factors(n);
-        primeNumbers(n);
-        perfectNumber(n);
+//        factors(n);
+//        primeNumbers(n);
+//        perfectNumber(n);
+        factorsOfDigits(n);
 
     }
 }

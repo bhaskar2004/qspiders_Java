@@ -14,17 +14,17 @@ public class fileReader {
             if(line.contains(";") && !(line.contains("package"))){
 
                 String [] words=line.split(" ");
-                if(words.length>2) {
-                    String dataTypes = words[0];
-                    String variables = words[1];
-                    System.out.println(dataTypes);
-                    System.out.println(variables);
-                }
-
-
-//                for (int i = 0; i < words.length; i++) {
-//                    System.out.print(words[i]+" ");
+//                if(words.length>2) {
+//                    String dataTypes = words[0];
+//                    String variables = words[1];
+//                    System.out.println(dataTypes);
+//                    System.out.println(variables);
 //                }
+
+
+                for (int i = 0; i < words.length; i++) {
+                    System.out.print(words[i]+" ");
+                }
 
 
 
